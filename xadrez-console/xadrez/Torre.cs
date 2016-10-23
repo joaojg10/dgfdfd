@@ -1,5 +1,4 @@
-﻿using ta
-    buleiro;
+﻿using tabuleiro;
 
 namespace xadrez
 {
