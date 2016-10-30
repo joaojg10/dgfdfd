@@ -35,12 +35,13 @@ namespace xadrez
             turno++;
             mudaJogador();
         }
+
  
         public void validarPosicaoDeOrigem(Posicao pos)
         {
                         if (tab.peca(pos) == null)
             {
-                                throw new TabuleiroException("Nao existe peca na posicao de origem escolhida!");
+                                throw new TabuleiroException("Não existe peça na posição de origem escolhida!");
                 
                             }
                         if (jogadorAtual != tab.peca(pos).cor)
@@ -49,10 +50,17 @@ namespace xadrez
                             }
                         if (!tab.peca(pos).existeMovimentosPossiveis())
             {
-                                throw new TabuleiroException("Não há movimentos possíveis para a peca de origem escolhida");
+                                throw new TabuleiroException("Não há movimentos possíveis para a peça de origem escolhida");
                 
                             }
                     }
+        public void validarPosicaoDeDestino(Posicao origem, Posicao destino)
+        {
+            if (!tab.peca(origem).podeMoverPara(destino))
+            {
+                throw new TabuleiroException("Posição de destino inválida!");
+            }
+        }
 
         private void mudaJogador()
         {
