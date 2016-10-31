@@ -36,7 +36,7 @@
                 {
                              break;
                               }
-                pos.definirValores(posicao.linha - 1, posicao.coluna - 1);
+                pos.definirValores(pos.linha - 1, posicao.coluna - 1);
            }
             
              // direita
@@ -48,7 +48,7 @@
                 {
                               break;
                       }
-              pos.definirValores(posicao.linha, posicao.coluna + 1);
+              pos.definirValores(pos.linha, posicao.coluna + 1);
                         }
           
                       // acima
@@ -60,7 +60,7 @@
              {
                       break;
                         }
-          pos.definirValores(posicao.linha - 1, posicao.coluna);
+          pos.definirValores(pos.linha - 1, posicao.coluna);
                      }
 
        
@@ -73,7 +73,7 @@
                 {
                             break;
                              }
-              pos.definirValores(posicao.linha + 1, posicao.coluna);
+              pos.definirValores(pos.linha + 1, posicao.coluna);
                        }
          
                        // NO
@@ -85,7 +85,7 @@
                 {
                                     break;
                                     }
-                pos.definirValores(posicao.linha - 1, posicao.coluna - 1);
+                pos.definirValores(pos.linha - 1, posicao.coluna - 1);
                             }
             
             
@@ -98,7 +98,7 @@
                 {
                                         break;
                                     }
-                pos.definirValores(posicao.linha - 1, posicao.coluna + 1);
+                pos.definirValores(pos.linha - 1, posicao.coluna + 1);
                  }
             
                      // SE
@@ -110,7 +110,7 @@
                 {
                                  break;
                                }
-                pos.definirValores(posicao.linha + 1, posicao.coluna + 1);
+                pos.definirValores(pos.linha + 1, posicao.coluna + 1);
                             }
             
                      // SO
@@ -122,7 +122,7 @@
                 {
                                     break;
                                }
-           pos.definirValores(posicao.linha + 1, posicao.coluna - 1);
+           pos.definirValores(pos.linha + 1, posicao.coluna - 1);
                        }
        
                    return mat;
